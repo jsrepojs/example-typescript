@@ -29,7 +29,7 @@ jobs:
               with:
                   commit: "chore(release): version package"
                   title: "chore(release): version package"
-                  publish: pnpm ci:release
+                  publish: pnpm release:registry
               env:
                   JSREPO_TOKEN: ${{ secrets.JSREPO_TOKEN }}
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

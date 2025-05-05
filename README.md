@@ -263,6 +263,8 @@ And finally let's modify our `jsrepo-build-config.json` file to use the version 
 
 Finally let's create a workflow so that we can publish a new version of our registry whenever there are changesets.
 
+> If you are publishing from a workflow make sure to create a token [here](https://jsrepo.com/account/access-tokens/new) and add it with the name `JSREPO_TOKEN` under `Settings / Secrets and variables / Actions`
+
 `.github/workflows/publish.yml`
 ```yaml
 name: Publish
@@ -296,7 +298,7 @@ jobs:
               with:
                   commit: "chore(release): version package"
                   title: "chore(release): version package"
-                  publish: pnpm ci:release
+                  publish: pnpm release:registry
               env:
                   JSREPO_TOKEN: ${{ secrets.JSREPO_TOKEN }} # !! DON'T FORGET THIS !!
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
