@@ -191,9 +191,11 @@ jsrepo add # list components
 jsrepo add utils/calculator # add individual
 ```
 
-### 5. Advanced usage
+and from the [jsrepo.com](https://jsrepo.com) page for your registry located at `https://jsrepo.com/@<scope>/<name>`.
 
-#### Un-listing blocks
+## 5. Advanced usage
+
+### Un-listing blocks
 
 Now let's do a few things to improve our registry.
 
@@ -213,7 +215,26 @@ Now when we list our blocks only `calculator` will appear.
 
 > Alternatively if we had more internal utils we could use `listBlocks` and only include `calculator` to prevent others from showing up here.
 
-#### Changesets
+### Metadata
+
+[jsrepo.com](https://jsrepo.com) uses metadata you provide in your `jsrepo-build-config.json` to display on your registries homepage.
+
+```jsonc
+{
+	// -- snip --
+	"meta": {
+		"authors": ["Aidan Bleser"],
+		"bugs": "https://github.com/jsrepojs/example-typescript",
+		"description": "A demo to show you can you can deploy your first typescript registry to jsrepo.com",
+		"homepage": "https://github.com/jsrepojs/example-typescript",
+		"repository": "https://github.com/jsrepojs/example-typescript",
+		"tags": ["registry", "typescript", "example", "jsrepo"]
+	},
+	// -- snip --
+}
+```
+
+### Changesets
 
 Another thing you may want to setup if you are publishing a registry to [jsrepo.com](https://jsrepo.com) is [changesets](https://github.com/changesets/changesets).
 

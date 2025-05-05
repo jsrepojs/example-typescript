@@ -1,6 +1,14 @@
 {
 	"$schema": "https://unpkg.com/jsrepo@2.0.0/schemas/registry-config.json",
 	"name": "@example/typescript",
+	"meta": {
+		"authors": ["Aidan Bleser"],
+		"bugs": "https://github.com/jsrepojs/example-typescript",
+		"description": "A demo to show you can you can deploy your first typescript registry to jsrepo.com",
+		"homepage": "https://github.com/jsrepojs/example-typescript",
+		"repository": "https://github.com/jsrepojs/example-typescript",
+		"tags": ["registry", "typescript", "example", "jsrepo"]
+	},
 	"version": "package",
 	"readme": "README.md",
 	"dirs": ["./src"],
