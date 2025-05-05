@@ -1,0 +1,17 @@
+{
+	"$schema": "https://unpkg.com/jsrepo@2.0.0/schemas/registry-config.json",
+	"name": "@example/typescript",
+	"version": "package",
+	"readme": "README.md",
+	"dirs": ["./src"],
+	"doNotListBlocks": ["logger"],
+	"doNotListCategories": [],
+	"listBlocks": [],
+	"listCategories": [],
+	"excludeDeps": [],
+	"includeBlocks": [],
+	"includeCategories": [],
+	"excludeBlocks": [],
+	"excludeCategories": [],
+	"preview": false
+}
