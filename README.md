@@ -1,4 +1,4 @@
-# example-typescript
+# @example/typescript
 
 A demo to show you how you can deploy your first TypeScript registry to jsrepo.com.
 
